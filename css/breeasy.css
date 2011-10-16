@@ -3,6 +3,10 @@
 	height: 30px;
 }
 
+
+#app_header {position: relative; padding: 0.3em; height: 1%}
+#user_info {position: absolute; top: 0.3em; right: 0.3em}
+
 #navigation {
 	margin:auto;
 	background-color:gray;
@@ -21,7 +25,7 @@
 	line-height: 30px;
 }
 
-#navigation li a {
+#navigation li {  /* Add back "a" here when links are added */
 	color: #fff;
 	text-decoration: none;
 	display: block;
@@ -40,6 +44,7 @@
 .theme-pascal.slider-wrapper, .theme-orman.slider-wrapper {
 margin-top: 10px;
 }
+
 /*
 #navigation li.current a {
 	color: #fff;
