@@ -1,3 +1,10 @@
+body {
+	font-family:Verdana;
+}
+
+table th, td {
+	border: none;
+}
 
 #header {margin:auto;
 	/* height: 30px; */
@@ -40,7 +47,7 @@
 	background: #900;
 }
 
-/* override margin of 150px in this theme...don't need that much room */
+/* replace margin of 150px in this theme...don't need that much room */
 .theme-pascal.slider-wrapper, .theme-orman.slider-wrapper {
 margin-top: 10px;
 }
@@ -59,3 +66,27 @@ margin-top: 10px;
 	border-left: solid #900 1px;
 }
 */
+
+#dev7link {
+    position:absolute;
+    top:0;
+    left:50px;
+    background:url(images/dev7logo.png) no-repeat;
+    width:60px;
+    height:67px;
+    border:0;
+    display:block;
+    text-indent:-9999px;
+}
+
+.theme-default #slider {
+    margin:100px auto 0 auto;
+    width:618px; /* Make sure your images are the same size */
+    height:246px; /* Make sure your images are the same size */ 
+
+/*====================*/
+/*=== Other Styles ===*/
+/*====================*/
+.clear {
+	clear:both;
+}
