@@ -21,6 +21,16 @@ table th, td {
 	height: 20px;
 	width: 700px;
 }
+#goodbye {
+	margin-top: 50px;
+	padding: 10px; 
+	height: 20px;
+	width: 700px;
+	border-style: solid;
+	border-width: thin;
+	font-size:85%;
+}
+
 
 #navigation ul {
 	list-style: none;
@@ -29,7 +39,7 @@ table th, td {
 }
 #navigation li {
 	float: left;
-	line-height: 30px;
+	line-height: 20px;
 }
 
 #navigation li a {  /* Add back "a" here when links are added */
