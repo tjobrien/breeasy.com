@@ -2,7 +2,7 @@ $(document).ready(function() {
 
 $("#navigation").corner();
 
-$("#goodbye").corner();
+$("#doc2").corner();
 
 
 });
