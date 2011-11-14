@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+  <meta charset="utf-8">
+	<title></title>
+	<meta name="description" content="" />
+  	<meta name="keywords" content="" />
+	<meta name="robots" content="" />
+	<script type="text/javascript" src="http://www.google.com/jsapi"></script>
+	<script type="text/javascript">google.load("jquery", "1");</script>
+	</head>
+<body>
+		<a href="#" id="reply">Reply</a>
+		<div id='message'>
+			<form id="myForm" action="somePage.php" method="get">
+	
+				<div id="text_area">
+	
+	
+				</div>
+				<div id='submit'>
+				</div>
+	
+			</form>
+		</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+$(document).ready(function() {
+ $('#reply').click(function(e) { 
+ 	//Create and add an input box
+	$('<textarea>').attr({'id':'body', 'rows':'10', 'cols':'60'}).appendTo("#text_area");
+	$('<input />').attr({'type':'submit', 'id':'Send'}).appendTo("#submit")
+	
+ 	$(this).slideUp();
+
+    return false;
+	
+  });
+  
+ });
+ 
+
+</script>

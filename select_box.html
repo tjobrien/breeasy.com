@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+<script type="text/javascript" src="http://www.google.com/jsapi"></script>
+<script type="text/javascript">google.load("jquery", "1");</script>
+  <meta charset="utf-8">
+	<title></title>
+	</head>
+	
+	 <script>
+  
+  $(document).ready(function() {
+  
+  function onSelectChange(){
+    var selected = $("#list_list_id option:selected");    
+    var output = "";
+    if(selected.val() != ""){
+    
+    $("#list_items").show();
+    }
+    else
+    {
+    $("#list_items").hide();
+    }
+ }
+  	    
+    });
+</script>
+
+<body>
+<form accept-charset="UTF-8" action="/users/4/to_dos" class="new_to_do" id="new_to_do" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="QxbDnPnbQQNt9mi6/0ftu5LrFhI1vees9fgVS1iy1iM=" /></div>
+
+	
+	<p>
+	  	<label for="to_do_details">Details</label> (limit to 100 characters)</br>
+		<textarea cols="80" id="to_do_details" name="to_do[details]" rows="2" title="Description must be at least 3 characters and no more that 100"></textarea>
+	</p>
+	<p>
+		<div id='tag_wrapper'>
+	 		<div id='tag_left'>
+				<label for="to_do_tag_list">Tags</label> (separate tags with a comma) <br>
+				<input id="tag_list" name="to_do[tag_list]" size="30" title="Use tags to help organize your To Dos." type="text" value="" />
+			</div>
+			<div id ='tag_right'>
+				Popular Tags (click to add)<br>
+			  			<label class="css4" for="Taxes">Taxes</label>
+			  			<label class="css3" for="Fast">Fast</label>
+			  			<label class="css3" for="shopping">Shopping</label>
+			</div>
+			<div id="list_items">Here is where list items go!</div>
+		</div>
+	</p>
+	<p>
+	Add a list: <br>
+	<select id="list_list_id" name="list[list_id]"><option value="">None</option>
+<optgroup label="My Lists"></optgroup><optgroup label="Shared Lists"><option value="1">shopping</option>
+<option value="2">Taxes</option></optgroup></select>
+	</p>
+	<p>
+	  	<label for="to_do_status">Status</label> </br>
+		<select id="to_do_status" name="to_do[status]"><option value="current">current</option>
+<option value="complete">complete</option></select>
+	</p>
+	<p>
+	  	<label for="to_do_due_date">Due date</label> </br>
+			<input id="datepicker" name="to_do[due_date]" size="10" type="text" />
+	</p>
+
+
+		<input id="to_do_submit" name="commit" type="submit" value="Add To Do" />
+	
+
+</form>
+</body>
+</html>
