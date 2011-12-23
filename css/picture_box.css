@@ -1,0 +1,15 @@
+.picturebox {
+background-image:url(../images/screen_shot.jpg);
+background-repeat: no-repeat;
+border: 1px solid #000000;
+padding:9px;
+width: 568px;
+margin: auto;
+}
+
+.framebox {
+border: 5px double #FFFFFF;
+height:268px;
+position:relative;
+
+}

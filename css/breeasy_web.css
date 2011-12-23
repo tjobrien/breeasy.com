@@ -41,6 +41,17 @@ right: 0.3em;
 	height: 20px;
 	width: 700px;
 }
+
+.main_visual {
+	margin:auto;
+	width: 700px;
+	text-align: center;
+	padding: 20px;
+	}
+.main_visual img {
+	margin:auto;
+	}
+
 #goodbye {
 	margin-top: 50px;
 	padding: 10px; 
