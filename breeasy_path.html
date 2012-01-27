@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>  
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js" type="text/javascript"></script>
+
+    <style>
+    
+  .change_color {color:yellow}
+  
+  </style>
+
+  
+  <script>
+  
+  $(document).ready(function() {
+  	
+  		
+  
+	  $("#account_breeasy_path").keyup(function() {
+	  	var base = "http://www.breeasy.com/"
+	  	var text = $(this).attr('value');
+	  	$('label#path').text(base + text);
+
+
+	  	});
+      
+    });
+</script>
+
+  
+</head>
+<body>
+    <div id="doc2">
+        <div id='app_header'>
+            <img alt="Logo_beta" src="/images/logo_beta.jpg?1298673319" />
+            <div id="user_info">
+                <h4>Logged In As::tjobrien</h4>
+                <h5>Subscription::Account Trial</h5>
+            </div>
+        </div> 
+        <div id='navigation'>
+        <ul>
+            <li><a href="/dashboard/1">Dashboard</a></li>
+            <li><a href="/accounts/1">Account Home</a></li>
+            <li><a href="/lists">Lists</a></li>
+            <li><a href="/lists">Calendars</a></li>
+            <li><a href="/lists">Support</a></li>
+            <li><a href="/lists">Search</a></li>
+            <li><a href="/lists">About</a></li>
+            <li><a href="http://localhost:3000/logout">Logout</a></li>
+        </ul>
+            
+        </div>
+        <br>
+        <div id='bd'>
+            <h1>Edit Account</h1>
+
+<form accept-charset="UTF-8" action="/accounts/1" class="edit_account" id="edit_account_1" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="_method" type="hidden" value="put" /><input name="authenticity_token" type="hidden" value="OfXck+axXgJ758r3jNBGfwFMNngNKDFVvQaMHgORGsI=" /></div>
+    <table>
+        
+
+    <tr><td><label for="account_name">Company name</label></td><td><input id="account_name" name="account[name]" size="30" type="text" value="BootStrap Technology Consulting" /></td></tr>
+    <tr><td><label for="account_nick_name">Nick name</label></td><td><input id="account_nick_name" name="account[nick_name]" size="30" type="text" value="BT" /></td></tr>
+    <tr><td><label for="account_email">Email address</label></td><td><input id="account_email" name="account[email]" size="30" type="text" value="info@bootstraptechnology.com" /></td></tr>
+    <tr><td><label for="account_url">URL</label></td><td><input id="account_url" name="account[url]" size="30" type="text" value="www.bootstraptechnology.com" /></td></tr>
+    <tr><td><label for="account_phone_number">Phone number</label></td><td><input id="account_phone_number" name="account[phone_number]" size="30" type="text" value="1.480.280.8913" /></td></tr>
+
+    
+
+
+
+    </table>
+        <p><label for="account_description">Description</label><br>
+        <textarea cols="60" id="account_description" name="account[description]" rows="10">Internet Consulting and web app mastery.</textarea></p>
+        <table>
+            <th>Keywords:</th>
+            <tr>
+          
+            <td><input id="account_keywords_attributes_0_word" name="account[keywords_attributes][0][word]" size="10" type="text" value="consulting" /></td>
+<input id="account_keywords_attributes_0_id" name="account[keywords_attributes][0][id]" type="hidden" value="1" />  
+            <td><input id="account_keywords_attributes_1_word" name="account[keywords_attributes][1][word]" size="10" type="text" value="Apps" /></td>
+<input id="account_keywords_attributes_1_id" name="account[keywords_attributes][1][id]" type="hidden" value="2" />  
+            <td><input id="account_keywords_attributes_2_word" name="account[keywords_attributes][2][word]" size="10" type="text" value="" /></td>
+<input id="account_keywords_attributes_2_id" name="account[keywords_attributes][2][id]" type="hidden" value="3" />  
+            <td><input id="account_keywords_attributes_3_word" name="account[keywords_attributes][3][word]" size="10" type="text" value="" /></td>
+<input id="account_keywords_attributes_3_id" name="account[keywords_attributes][3][id]" type="hidden" value="4" />  
+            <td><input id="account_keywords_attributes_4_word" name="account[keywords_attributes][4][word]" size="10" type="text" value="" /></td>
+<input id="account_keywords_attributes_4_id" name="account[keywords_attributes][4][id]" type="hidden" value="5" />          </tr>
+        </table>
+        <table>
+            <tr>
+                <td colspan='3'><label for="account_breeasy_path">Breeasy Path (http://www.breeasy.com/</label></td><td><input id="account_breeasy_path" name="account[breeasy_path]" size="30" type="text" value="bootstraptech" />)</td>
+                <td><label id="path">http://www.breeasy.com/bootstraptech</label></td>
+            </tr>
+            <tr><td><label for="account_searchable">Searchable?</label></td><td><input name="account[searchable]" type="hidden" value="0" /><input id="account_searchable" name="account[searchable]" type="checkbox" value="1" /></td></tr>
+        </table>
+    <input id="account_submit" name="commit" type="submit" value="Update" />
+    
+</form>
+
+        </div> 
+
+        <div id='ft' class='center'>copyright &copy; 2011 Breeasy.com</div>
+    </div>
+
+</body>
+</html>

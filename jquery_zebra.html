@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+<style type="text/css">
+
+table {
+	
+	
+	border-collapse: collapse;
+}
+	.odd {
+   background: #ccc;
+}
+
+tr {
+
+}
+td {
+ border: 1px solid black;
+ }
+
+</style>
+  <meta charset="utf-8">
+	<title></title>
+	<meta name="description" content="" />
+  	<meta name="keywords" content="" />
+	<meta name="robots" content="" />
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js" type="text/javascript"></script>
+
+</head>
+<body>
+<table>
+	<tr><th colspan='5'>Your Recent Tasks (Owned)</th></tr>
+	<tr>
+	<th>Id</th><th>Child</th><th>Parent</th><th>Created</th><th>Assigned</th><th>Regarding</th><th>Type</th><th>Description</th><th>Due Date</th><th>Status</th>
+</tr>
+
+
+
+	<tr>
+	<td><a href="/tasks/12">12</a></td>
+	<td></td>
+	<td></td>
+	<td>23 Dec 20:10</td>
+	<td>Tom O'Brien</td>
+	<td></td>
+	<td>schedule a meeting</td>
+	<td>Please Call this guy.</td>
+		<td>30 Dec</td>
+	<td>current</td>
+	<td><a href="/tasks/12/edit">edit</a></td>
+	<td><a href="/tasks/12">details</a></td>
+	<td><a href="/task/12/complete">complete</a></td>
+</tr>
+
+
+	<tr>
+	<td><a href="/tasks/13">13</a></td>
+	<td></td>
+	<td></td>
+	<td>25 Dec 12:06</td>
+	<td>Tom O'Brien</td>
+	<td>Mao Tse Tung</td>
+	<td>schedule a meeting</td>
+	<td>Please set something u...</td>
+		<td class='late'>25 Dec</td>
+	<td>current</td>
+	<td><a href="/tasks/13/edit">edit</a></td>
+	<td><a href="/tasks/13">details</a></td>
+	<td><a href="/task/13/complete">complete</a></td>
+</tr>
+
+
+
+
+
+	<tr><td colspan = '2'><a href="/people/1/tasks/new">Add</a> | <a href="/people/1/tasks">All</a></td></tr>	
+</table>
+</body>
+</html>
+
+
+<script type="text/javascript">
+$(document).ready(function() {
+	$("tr:odd").addClass("odd");
+  });
+ 
+
+</script>

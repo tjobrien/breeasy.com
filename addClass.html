@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+  <meta charset="utf-8">
+	<title></title>
+	<script type="text/javascript" src="http://www.google.com/jsapi"></script>
+	<script type="text/javascript">google.load("jquery", "1");</script>
+	<style>
+		.current {
+		color:green;
+		}
+		
+		.completed {
+		color:blue;
+		}
+	
+	
+	
+	</style>
+	
+</head>
+<body>
+if(selected.val() == 'complete'){
+    
+    $("#completion_date").show();
+    }
+    else
+    {
+    $("#completion_date").hide();
+    }
+    
+          $("div").each(function (i) {
+        if (this.style.color != "blue") {
+          this.style.color = "blue";
+        } else {
+          this.style.color = "";
+        }
+      });
+
+<p>
+<label class="status">current</label>
+<label class="status">completed</label>
+<label class="status">current</label>
+<label id='new'></label>
+</p>
+<table><tr><td class="status">current</td><td class="status">complete</td></tr></table>
+
+</body>
+</html>
+
+
+<script type="text/javascript">
+$('document').ready(function(){
+
+/*  works but need to iterate through each label with a class of status.
+$(function(){
+ if($('.status:first').text() == 'current') {
+ 	$('.status:first').addClass('current');
+ }
+  //$('.status').addClass('current');
+  var str = $('label:first').text();
+  
+  $('#new').text(str);
+    
+    
+    
+});
+*/
+	$(function(){
+		$('label.status, td.status').each(function (i){
+			if ($(this).text() == 'current'){
+			$(this).addClass('current');
+			}		
+			if ($(this).text() == 'completed'){
+			$(this).addClass('completed');
+			}		
+
+		});
+		
+	
+	});
+
+
+});
+
+
+</script>

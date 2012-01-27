@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Messing with the Jquery tool tip on the menu bar</title>
+	<meta name="description" content="Content Here has to be specific to this page.">
+	<!-- Combo-handled YUI CSS files: --> 
+<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/combo?2.9.0/build/reset-fonts-grids/reset-fonts-grids.css&2.9.0/build/base/base-min.css"> 
+	<link rel="stylesheet" href="css/breeasy_web.css" type="text/css" media="screen" />
+	<link rel="canonical" href="http://www.breeasy.com" />
+	
+	<style>
+
+/* tooltip styling. by default the element to be styled is .tooltip  */
+.tooltip {
+	display:none;
+	background:transparent url(images/black_arrow_bottom.png);
+	font-size:12px;
+	height:70px;
+	width:160px;
+	padding:25px;
+	color:#fff;	
+}
+.tooltip_display {
+	display:block;
+	background:transparent url(images/black_arrow_bottom.png);
+	font-size:12px;
+	height:70px;
+	width:160px;
+	padding:25px;
+	color:#fff;	
+}
+
+	</style>
+
+
+</head>
+<body>
+<div id="doc2" class="yui-t1">
+	<div id="app_header">
+		<img src="images/small_logo_w_globe.jpg" alt="small_logo_w_globe" width="320" height="80" />
+		<div id="social_links">
+		Put all social icons here:  FB, Twitter, LI, Blog
+    	</div>
+
+	</div>
+
+   <div id="hd">
+   		<div id='navigation'>
+			<ul id="nav">
+					<li>
+					<a href="index.html" class="dropdown">Home</a>
+					<div class="tooltip">
+						aldsflsajdf adlfj aflkjdsldjfasdl fjdas
+					
+					
+					</div>
+
+					
+					</li>
+					<li title="Some Text goes here saljdfldajf dsljfaslfja sdlfjsalfj"><a href="http://billing.breeasy.com">Buy Now</a></li>
+					<li title="Some Text goes here saljdfldajf dsljfaslfja sdlfjsalfj"><a href="features.html">Features</a></li>
+					<li title="Some Text goes here saljdfldajf dsljfaslfja sdlfjsalfj"><a href="opportunity.html">Opportunities</a></li>
+					<li title="Some Text goes here saljdfldajf dsljfaslfja sdlfjsalfj"><a href="about.html">About</a></li>
+					<li><p class='dropdown'>View >></p>
+					<div class="tooltip">
+					dsalfjdafsl asdaldsfj asdlfjasd lfadjfadlfjadsflasdfjadflsj 
+					</div></li>
+			</ul>
+		</div>
+   </div>
+
+   <div id="bd">
+   			<div class="yui-gd">
+	    		<div class="yui-u first">
+					<h1 id='first_col'>Page Title</h1>
+					<h3>-Highlights</h3>
+					<h3>-Highlights</h3>
+					<a href="index.html" class="dropdown">Home</a>
+					<div class="tooltip_display">
+					<table>
+						<tr><td><a href="/company_relationships/new">To Do</a></td><td><a href="/people/1/tasks/new">Task</a></td><td><a href="/users/1/events/new">Event</a></td></tr>
+						<tr><td><a href="/contact/quick_add">Contact</a></td><td><a href="/company_relationships/new">CSI</a></td><td><a href="/company_relationships/new?id=1">Company</a></td></tr>
+					</table>
+					</div>
+		    	</div>
+	    		<div class="yui-u">
+<!-- 	    	Use Photos here  note size!	 -->
+	    			<img class='hero' src="images/icon_connections.jpg" alt="icon_connections" width="568" height="318" />
+				</div>
+		</div>
+
+		<div id="yui-main">
+			<div class="yui-b">
+				<div class="yui-g"> Main Text Area Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+				incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex e
+				commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+				occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				</div> <!-- yui-g -->
+			</div> <!-- yui-b -->
+		</div> <!-- yui-main -->
+		<div class="yui-b">Left hand side  Ads can go here!
+		</div>
+	</div> <!-- bd -->
+   <div id="ft"><div id='goodbye'>built by <a href="http://www.bootstraptechnology.com">BootStrap Technology Consulting</a>&nbsp; copyright &copy; 2011 			Breeasy.com</div></div>
+</div>
+
+    <script type="text/javascript" src="scripts/jquery-1.6.1.min.js"></script>
+	<script src="scripts/jquery.corner.js" type="text/javascript"></script>
+	<script src="scripts/application.js" type="text/javascript"></script>
+	<script src="http://cdn.jquerytools.org/1.2.6/tiny/jquery.tools.min.js"></script>
+</body>
+</html>

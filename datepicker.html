@@ -8,10 +8,16 @@
 
   <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js"></script>
   
+  <script type="text/javascript" src="http://dynobox.googlecode.com/files/jquery.dynobox.0.8.js"></script>
+  <style>
+  	#search {background: url('images/ico_search.gif') center right no-repeat;}
+  </style>
   
   <script>
   $(document).ready(function() {
     $("#datepicker").datepicker();
+    
+    $('#search').dynoBox();
   });
   </script>
 </head>
@@ -20,6 +26,9 @@
 <div>
 
 <input type="text" id='datepicker'>
+
+
+<input type="text" id='search', title="this is random title text">
 
 
 </div>
