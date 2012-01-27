@@ -1,12 +1,37 @@
 <!DOCTYPE html>
 <html>
 <head>
-   <title>Title to be specific to this page</title>
+   <title>Messing with the Jquery tool tip on the menu bar</title>
 	<meta name="description" content="Content Here has to be specific to this page.">
 	<!-- Combo-handled YUI CSS files: --> 
 <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/combo?2.9.0/build/reset-fonts-grids/reset-fonts-grids.css&2.9.0/build/base/base-min.css"> 
 	<link rel="stylesheet" href="css/breeasy_web.css" type="text/css" media="screen" />
 	<link rel="canonical" href="http://www.breeasy.com" />
+	
+	<style>
+
+/* tooltip styling. by default the element to be styled is .tooltip  */
+.tooltip {
+	display:none;
+	background:transparent url(images/black_arrow_bottom.png);
+	font-size:12px;
+	height:70px;
+	width:160px;
+	padding:25px;
+	color:#fff;	
+}
+.tooltip_display {
+	display:block;
+	background:transparent url(images/black_arrow_bottom.png);
+	font-size:12px;
+	height:70px;
+	width:160px;
+	padding:25px;
+	color:#fff;	
+}
+
+	</style>
+
 
 </head>
 <body>
@@ -14,11 +39,7 @@
 	<div id="app_header">
 		<img src="images/small_logo_w_globe.jpg" alt="small_logo_w_globe" width="320" height="80" />
 		<div id="social_links">
-		<img src="images/facebook-24x24.jpg" alt="facebook" width="24" height="24" />
-		<img src="images/twitter-24x24.jpg" alt="twitter" width="24" height="24" />
-		<img src="images/youtube-24x24.jpg" alt="youtube" width="24" height="24" />
-
-
+		Put all social icons here:  FB, Twitter, LI, Blog
     	</div>
 
 	</div>
@@ -26,22 +47,41 @@
    <div id="hd">
    		<div id='navigation'>
 			<ul id="nav">
-					<li id="nav-home"><a href="index.html">Home</a></li>
-					<li id="nav-buy"><a href="http://breeasy-app.heroku.com/purchase">Pricing</a></li>
-					<li id="nav-contact"><a href="features.html">Features</a></li>
-					<li id="nav-opportunity"><a href="opportunity.html">Opportunities</a></li>
-					<li id="nav-about"><a href="about.html">About</a></li>
-					<li id="nav-blog"><a href="http://brze.me">Blog</a></li>
-					<li id= "nav-login"><a href="http://breeasy-app.heroku.com">Login</a></li>		
-				</ul>
+					<li>
+					<a href="index.html" class="dropdown">Home</a>
+					<div class="tooltip">
+						aldsflsajdf adlfj aflkjdsldjfasdl fjdas
+					
+					
+					</div>
+
+					
+					</li>
+					<li title="Some Text goes here saljdfldajf dsljfaslfja sdlfjsalfj"><a href="http://billing.breeasy.com">Buy Now</a></li>
+					<li title="Some Text goes here saljdfldajf dsljfaslfja sdlfjsalfj"><a href="features.html">Features</a></li>
+					<li title="Some Text goes here saljdfldajf dsljfaslfja sdlfjsalfj"><a href="opportunity.html">Opportunities</a></li>
+					<li title="Some Text goes here saljdfldajf dsljfaslfja sdlfjsalfj"><a href="about.html">About</a></li>
+					<li><p class='dropdown'>View >></p>
+					<div class="tooltip">
+					dsalfjdafsl asdaldsfj asdlfjasd lfadjfadlfjadsflasdfjadflsj 
+					</div></li>
+			</ul>
 		</div>
    </div>
+
    <div id="bd">
    			<div class="yui-gd">
 	    		<div class="yui-u first">
 					<h1 id='first_col'>Page Title</h1>
 					<h3>-Highlights</h3>
-					<h3>-Highihts</h3>
+					<h3>-Highlights</h3>
+					<a href="index.html" class="dropdown">Home</a>
+					<div class="tooltip_display">
+					<table>
+						<tr><td><a href="/company_relationships/new">To Do</a></td><td><a href="/people/1/tasks/new">Task</a></td><td><a href="/users/1/events/new">Event</a></td></tr>
+						<tr><td><a href="/contact/quick_add">Contact</a></td><td><a href="/company_relationships/new">CSI</a></td><td><a href="/company_relationships/new?id=1">Company</a></td></tr>
+					</table>
+					</div>
 		    	</div>
 	    		<div class="yui-u">
 <!-- 	    	Use Photos here  note size!	 -->
@@ -67,7 +107,6 @@
     <script type="text/javascript" src="scripts/jquery-1.6.1.min.js"></script>
 	<script src="scripts/jquery.corner.js" type="text/javascript"></script>
 	<script src="scripts/application.js" type="text/javascript"></script>
-	<script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
-	<script src="http://platform.twitter.com/widgets.js" type="text/javascript"></script>
+	<script src="http://cdn.jquerytools.org/1.2.6/tiny/jquery.tools.min.js"></script>
 </body>
 </html>
