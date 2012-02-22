@@ -90,6 +90,9 @@ right: 0.3em;
 	font-weight: normal;
 }
 
+ul.list li {
+list-style: square}
+
 
 /*
 #navigation li a:hover {
