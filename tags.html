@@ -3,9 +3,11 @@
 <head>  
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js" type="text/javascript"></script>
 
-    <style>
-  p { color:red; margin:5px; cursor:pointer; }
+  <style type="text/css">
+  p {color:red; margin:5px; cursor:pointer; }
   p.hilite { background:yellow; }
+  p.completed {
+  text-decoration: line-through;}
   </style>
 
   
@@ -50,6 +52,6 @@
 
 <input type="text" id ="keywords", size="40"></input>
 
-
+<p class="completed">Text To Strikethrough</p>
 </body>
 </html>

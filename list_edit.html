@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+  <meta charset="utf-8">
+	<title></title>
+	<meta name="description" content="" />
+  	<meta name="keywords" content="" />
+	<meta name="robots" content="" />
+	<script type="text/javascript" src="http://www.google.com/jsapi"></script>
+	<script type="text/javascript">google.load("jquery", "1");</script>
+
+
+	</head>
+<body>
+<form accept-charset="UTF-8" action="/lists" class="new_list" id="new_list" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="rM9CkgWQYz9hntjUk51OAh04+l+30dNE30KCFZRrbkA=" /></div>
+	
+	
+<p>
+  	<label for="list_name">List Name</label></br>
+	<input id="list_name" name="list[name]" size="40" type="text" />
+</p>
+
+<fieldset id="list">
+  
+  <p class="item">  
+    <label for="list_list_items_attributes_0_item">Item</label><br>  
+    <input id="list_list_items_attributes_0_item" name="list[list_items_attributes][0][item]" size="40" type="text" value="Milk"> <input name="list[list_items_attributes][0][completed]" type="hidden" value="0"><input id="list_list_items_attributes_0_completed" name="list[list_items_attributes][0][completed]" type="checkbox" value="1">
+  </p>  
+<input id="list_list_items_attributes_0_id" name="list[list_items_attributes][0][id]" type="hidden" value="15">  
+  <p class="item">  
+    <label for="list_list_items_attributes_1_item">Item</label><br>  
+    <input id="list_list_items_attributes_1_item" name="list[list_items_attributes][1][item]" size="40" type="text" value="Beer"> <input name="list[list_items_attributes][1][completed]" type="hidden" value="0"><input id="list_list_items_attributes_1_completed" name="list[list_items_attributes][1][completed]" type="checkbox" value="1">
+  </p>  
+<input id="list_list_items_attributes_1_id" name="list[list_items_attributes][1][id]" type="hidden" value="16">  
+  <p class="item">  
+    <label for="list_list_items_attributes_2_item">Item</label><br>  
+    <input id="list_list_items_attributes_2_item" name="list[list_items_attributes][2][item]" size="40" type="text" value="Water"> <input name="list[list_items_attributes][2][completed]" type="hidden" value="0"><input id="list_list_items_attributes_2_completed" name="list[list_items_attributes][2][completed]" type="checkbox" value="1">
+  </p>  
+<input id="list_list_items_attributes_2_id" name="list[list_items_attributes][2][id]" type="hidden" value="17">  
+  <p class="item">  
+    <label for="list_list_items_attributes_3_item">Item</label><br>  
+    <input id="list_list_items_attributes_3_item" name="list[list_items_attributes][3][item]" size="40" type="text" value="Scotch"> <input name="list[list_items_attributes][3][completed]" type="hidden" value="0"><input id="list_list_items_attributes_3_completed" name="list[list_items_attributes][3][completed]" type="checkbox" value="1">
+  </p>  
+<input id="list_list_items_attributes_3_id" name="list[list_items_attributes][3][id]" type="hidden" value="18">  
+  <p class="item">  
+    <label for="list_list_items_attributes_4_item">Item</label><br>  
+    <input id="list_list_items_attributes_4_item" name="list[list_items_attributes][4][item]" size="40" type="text" value="ice"> <input name="list[list_items_attributes][4][completed]" type="hidden" value="0"><input id="list_list_items_attributes_4_completed" name="list[list_items_attributes][4][completed]" type="checkbox" value="1">
+  </p>  
+<input id="list_list_items_attributes_4_id" name="list[list_items_attributes][4][id]" type="hidden" value="19">  
+  <p class="item">  
+    <label for="list_list_items_attributes_5_item">Item</label><br>  
+    <input id="list_list_items_attributes_5_item" name="list[list_items_attributes][5][item]" size="40" type="text" value="more ice"> <input name="list[list_items_attributes][5][completed]" type="hidden" value="0"><input id="list_list_items_attributes_5_completed" name="list[list_items_attributes][5][completed]" type="checkbox" value="1">
+  </p>  
+<input id="list_list_items_attributes_5_id" name="list[list_items_attributes][5][id]" type="hidden" value="23"><a href="/" id="add">Add Item</a>
+</fieldset>
+
+
+	 <input id="list_submit" name="commit" type="submit" value="Update List">
+</form>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+
+$(document).ready(function() {
+
+	$('#add').click(function(e) { 
+   	var count = $('.item').length
+	var lastItem = $('.item:last')
+	var input = lastItem.find('input')
+	var label = lastItem.find('label')
+	var newInput = input.clone();
+	var newLabel = label.clone();
+	
+	newInput.attr('id', function() {
+	  return 'list_list_items_attributes_' + count + '_item'
+	});
+	newInput.attr('name', function() {
+	  return 'list[list_items_attributes][' + count + '][item]'
+	});
+	newInput.val('');
+	newLabel.attr('for', function() {
+	  return 'list[list_items_attributes][' + count + '][item]'
+	});
+	
+	var newItem = $('<p>')
+	newItem.addClass('item')
+	newItem.append(newLabel)
+	newItem.append('<br>')
+	newItem.append(newInput)	
+	lastItem.after(newItem)
+    return false;
+	
+  });
+   });
+ 
+
+</script>
